@@ -1,0 +1,163 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+    <title>{% block title %}Ride Mate Cab{% endblock %}</title>
+  </head>
+  <body class="mesh-full">
+    <nav class="navbar navbar-expand-lg navbar-light position-absolute w-100" style="z-index: 1000;">
+      <div class="container-fluid">
+        <img class="navbar-brand position-absolute" href="#" src="{% static 'images/ride-cabs.png' %}" alt="">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link{% if request.path == '#home' %} active{% endif %}" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link{% if request.path == '#about-us' %} active{% endif %}" href="{% url 'home' %}#about-us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link{% if request.path == '#about-us' %} active{% endif %}" href="{% url 'home' %}#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link{% if request.path == '#car-selection' %} active{% endif %}" href="{% url 'home' %}#car-selection">Cabs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link{% if request.path == '#packages' %} active{% endif %}" href="{% url 'home' %}#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link{% if request.path == '#faq-section' %} active{% endif %}" href="{% url 'home' %}#faq-section">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link{% if request.path == '#contact-us' %} active{% endif %}" href="{% url 'home' %}#contact-us">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+
+    </div>'
+    <div class="float-button">
+      <a href="https://wa.me/1234567890" target="_blank" title="Chat with us on WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+  </div>
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-4">Ridematecabs</h5>
+        <p>Your trusted partner in comfortable and reliable transportation services.</p>
+        <div class="mt-4">
+          <a href="#" class="btn btn-outline-light btn-floating me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating me-2"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-4">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="text-white text-decoration-none" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white text-decoration-none" href="{% url 'home' %}#about-us">About us</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white text-decoration-none" href="{% url 'home' %}#services">Services</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white text-decoration-none" href="{% url 'home' %}#car-selection">Cabs</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white text-decoration-none" href="{% url 'home' %}#packages">Packages</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white text-decoration-none" href="{% url 'home' %}#faq-section">FAQs</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white text-decoration-none" href="{% url 'home' %}#contact-us">Contact us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-4">Contact Info</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <i class="fas fa-home me-2"></i> 123 Street Name, City, Country
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-phone me-2"></i> +1 234 567 8900
+          </li>
+          <li class="mb-3">
+            <i class="fas fa-clock me-2"></i> 24/7 Available
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row mt-4">
+      <div class="col-md-12 text-center">
+        <hr class="mb-4" />
+        <p class="mb-0">
+          © {% now "Y" %} Your Company. All rights reserved.
+          <a class="text-white text-decoration-none" href="#!">Privacy Policy</a> |
+          <a class="text-white text-decoration-none" href="#!">Terms of Service</a>
+        </p>
+        <a href="https://finnest.io/" target="_blank" style="color: bisque;">Powered By Finnest Technologies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script>
+      // Add mouse movement effect
+      document.addEventListener('mousemove', (e) => {
+          const x = e.clientX / window.innerWidth * 100;
+          const y = e.clientY / window.innerHeight * 100;
+          
+          document.querySelector('.mesh-full').style.background = `
+              radial-gradient(circle at ${x}% ${y}%, #ff6b6b15, transparent 50%),
+              radial-gradient(circle at ${100-x}% ${y}%, #4ecdc415, transparent 50%),
+              radial-gradient(circle at ${100-x}% ${100-y}%, #45b7d115, transparent 50%),
+              radial-gradient(circle at ${x}% ${100-y}%, #96e6a115, transparent 50%)
+          `;
+      });
+  </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

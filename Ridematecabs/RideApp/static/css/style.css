@@ -1,0 +1,2807 @@
+body {
+    font-family: "DM Sans", sans-serif !important;
+
+}
+.carousel-control-prev {
+    width: 7% !important;
+
+}
+.carousel-control-next {
+    width: 7% !important;
+
+}
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    animation: bounce 2s infinite;
+}
+
+.float-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.float-button a:hover {
+    transform: scale(1.1);
+    background-color: #128C7E;
+}
+
+.float-button i {
+    color: white;
+    font-size: 30px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+.services h1{
+    margin-bottom: 4rem;
+}
+.service-card{
+    border: 2px solid #FFEBBB !important;
+
+}
+@media (min-width:1400px){
+    
+.nav-link{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2d3436 !important;
+}
+.navbar-brand{
+    margin-top: 3rem;
+    margin-left: 7rem;
+    width: 7%;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.mesh-full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 0% 0%, #ff6b6b15, transparent 50%),
+        radial-gradient(circle at 100% 0%, #4ecdc415, transparent 50%),
+        radial-gradient(circle at 100% 100%, #45b7d115, transparent 50%),
+        radial-gradient(circle at 0% 100%, #96e6a115, transparent 50%);
+    background-color: #fafafa;
+    z-index: -1;
+    animation: meshFloat 15s ease-in-out infinite alternate;
+}
+
+@keyframes meshFloat {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+/* Optional: Add a subtle grid overlay */
+.mesh-full::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.content {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+b
+p {
+    font-family: "DM Sans", sans-serif !important;
+
+}
+
+.hero-section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-section-1 {
+    justify-content: center;
+
+    color: white;
+    height: 100vh !important;
+    font-family: "DM Sans", sans-serif;
+}
+
+.hero-section-1 h1 {
+ 
+    font-weight: 500;
+}
+
+.hero-section-1 button {
+    margin-top: 1.8rem;
+    font-weight: bold;
+    background: #D9D9D9;
+    text-decoration: none;
+    color: #495F6B;
+    padding: 1.1rem 2.8rem;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+.hero-section-1 button:hover {
+    transform: translateY(-3px);
+    background: #c0c0c0;
+}
+
+/* Hero Image Animation */
+.hero-image {
+    object-fit: cover;
+
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+/* Text Animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.about-us {
+
+    height: 100%;
+    padding: 10rem 0rem;
+}
+
+.about-us .round {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #F3FFD4, #FFCC53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px solid #dee2e6;
+}
+
+.about-us .round h3 {
+    font-size: 2rem;
+}
+
+.about-us h5 {
+    margin-top: .8rem;
+    font-size: 1.5rem;
+}
+
+.car-selection {
+
+    height: 100%;
+    padding: 10rem 0rem;
+}
+.car-selection h4{
+    margin-top: .8rem;
+    font-size: 2.5rem;
+}
+
+.nav-pills {
+    padding-top: 1.3rem;
+    padding: .75rem 0rem;
+    height: 4.2rem;
+    border-radius: 50px;
+    background: #F7B926;
+}
+
+.car-tab {
+    margin-top: .2rem;
+
+    font-family: "DM Sans", sans-serif;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* border-radius: 50px; */
+    padding: 10px 15px;
+    margin: 0px 18px;
+}
+
+.car-tab:hover {
+    border-bottom: 4px solid #5c5c5c;
+
+}
+
+.car-tab.active {
+    /* padding: 1rem 2rem; */
+    border-bottom: 4px solid #f8f9fa;
+    border-radius: 5px;
+
+}
+
+.car-image-container {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    overflow: hidden;
+
+}
+
+.choose-button {
+    font-family: "DM Sans", sans-serif;
+
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.packages {
+
+    height: 100%;
+    padding: 10rem 0rem;
+}
+.packages h4{
+    margin-bottom: 4.2rem;
+    font-size: 2.5rem;
+}
+.packages .package {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #FFFFFF, #FFEBBB);
+    width: 95%;
+    height: 35rem;
+    margin-bottom: 2.7rem;
+}
+
+.packages .package img {
+    border-radius: 15px 15px 0px 0px;
+    /* width: 10rem; */
+    height: 21rem;
+}
+.packages .package h3{
+    font-size: 1.5rem;
+}
+.packages .package .div {
+    position: relative;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    min-height: 13.5rem;
+    
+}
+.packages .package .div button{
+    position:absolute ;
+    font-family: "DM Sans", sans-serif;
+
+  bottom: .8rem;
+    font-weight: 500;
+    background: #59FF59;
+    text-decoration: none;
+
+    width: 88%;
+    height: 20%;
+    border: 1px solid #11E3A8;
+    border-radius: 50px;
+}
+.packages .package .div p{
+    margin-bottom: .2rem;
+   margin: 0%;
+}
+.packages .package .div .p{
+    font-size: .9rem;
+}
+.packages .show-all-button a {
+    width: 100%;
+    max-width: 200px;
+}
+.packages .show-all-button a button{
+    font-family: "DM Sans", sans-serif;
+
+    align-items: center;
+    margin-top: 1.8rem;
+    font-weight: 400;
+    background: #ffffff;
+    text-decoration: none;
+
+    width: 100%;
+    max-width: 200px;
+    height: 3rem;
+    border: 1px solid #11E3A8;
+    border-radius: 50px;
+}
+.faq-section{
+    height: 100%;
+    padding: 10rem 0rem;
+}
+.faq-section h4{
+    font-size: 2.5rem;
+}
+.accordion-item {
+    background-image: linear-gradient(to right, #feffef, #ffffff);
+}
+.accordion-button{
+    background-image: linear-gradient(to right, #feffe9, #fff5dd);
+
+}
+.contact-us{
+    height: 100%;
+    padding: 10rem 0rem;
+}
+.contact-us h4{
+    font-size: 2.5rem;
+}
+.contact-us  .contact-card{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2.5rem;
+    border-radius: 15px;
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(to right, #f6f8e2, #FFEBBB);
+
+}
+.contact-us  .contact-card button{
+    font-family: "DM Sans", sans-serif;
+    align-items: center;
+    /* margin-top: 1.8rem;   */
+    font-weight: 500;
+    font-size: 1.3rem;
+    background: #59FF59;
+    text-decoration: none;
+
+    width: 100%;
+    max-width: 200px;
+    height: 3rem;
+    border: 1px solid #11E3A8;
+    border-radius: 50px;
+
+}
+
+.car-list h4{
+    margin-top: 9.5rem !important;
+    margin: 2.5rem;
+    font-size: 2.5rem;
+}
+.car-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 387px;
+
+    transition: transform 0.3s;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.car-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.car-info {
+    padding: 1rem;
+    position: relative;
+}
+
+.car-title {
+    font-size: 1.52rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #2d3436;
+}
+.car-info  .book-now-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.8rem;
+    font-weight: 500;
+    background: #59FF59;
+    text-decoration: none;
+    width: 100%;
+  padding: .5rem 0rem;
+    border: 1px solid #11E3A8;
+    border-radius: 50px;
+}
+.passengers {
+    font-size: 0.95rem;
+    color: #636e72;
+    margin-bottom: 0.25rem;
+}
+
+.price-info {
+    font-size: 0.95rem;
+    color: #636e72;
+}
+
+.day-rate {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: #2d3436;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+}   
+@media (max-width:1399.98px){
+    .navbar-brand{
+        margin-top: 3rem;
+        /* margin-left: 7rem; */
+        width: 7%;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .nav-link{
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #2d3436 !important;
+    }
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .mesh-full {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+            radial-gradient(circle at 0% 0%, #ff6b6b15, transparent 50%),
+            radial-gradient(circle at 100% 0%, #4ecdc415, transparent 50%),
+            radial-gradient(circle at 100% 100%, #45b7d115, transparent 50%),
+            radial-gradient(circle at 0% 100%, #96e6a115, transparent 50%);
+        background-color: #fafafa;
+        z-index: -1;
+        animation: meshFloat 15s ease-in-out infinite alternate;
+    }
+    
+    @keyframes meshFloat {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 50px 50px;
+        }
+    }
+    
+    /* Optional: Add a subtle grid overlay */
+    .mesh-full::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+            linear-gradient(0deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+    
+    .content {
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    b
+    p {
+        font-family: "DM Sans", sans-serif !important;
+    
+    }
+    
+    .hero-section {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .hero-section-1 {
+        justify-content: center;
+
+        color: white;
+        height: 100vh !important;
+        font-family: "DM Sans", sans-serif;
+    }
+    
+    .hero-section-1 h1 {
+        font-weight: 500;
+    }
+    
+    .hero-section-1 button {
+        margin-top: 1.8rem;
+        font-weight: bold;
+        background: #D9D9D9;
+        text-decoration: none;
+        color: #495F6B;
+        padding: 1.1rem 2.8rem;
+        border: none;
+        border-radius: 50px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        font-family: "DM Sans", sans-serif;
+    
+    }
+    
+    .hero-section-1 button:hover {
+        transform: translateY(-3px);
+        background: #c0c0c0;
+    }
+    
+    /* Hero Image Animation */
+    .hero-image {
+        object-fit: cover;
+
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+    }
+    
+    /* Text Animations */
+    .fade-in-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s ease forwards;
+    }
+    
+    .delay-1 {
+        animation-delay: 0.3s;
+    }
+    
+    .delay-2 {
+        animation-delay: 0.6s;
+    }
+    
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    .about-us {
+    
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    
+    .about-us .round {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #F3FFD4, #FFCC53);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 2px solid #dee2e6;
+    }
+    
+    .about-us .round h3 {
+        font-size: 2rem;
+    }
+    
+    .about-us h5 {
+        margin-top: .8rem;
+        font-size: 1.5rem;
+    }
+    
+    .car-selection {
+    
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .car-selection h4{
+        margin-top: .8rem;
+        font-size: 2.5rem;
+    }
+    
+    .nav-pills {
+        padding-top: 1.3rem;
+        padding: .75rem 0rem;
+        height: 4.2rem;
+        border-radius: 50px;
+        background: #F7B926;
+    }
+    
+    .car-tab {
+        margin-top: .2rem;
+    
+        font-family: "DM Sans", sans-serif;
+    
+        cursor: pointer;
+        transition: all 0.3s ease;
+        /* border-radius: 50px; */
+        padding: 10px 15px;
+        margin: 0px 18px;
+    }
+    
+    .car-tab:hover {
+        border-bottom: 4px solid #5c5c5c;
+    
+    }
+    
+    .car-tab.active {
+        /* padding: 1rem 2rem; */
+        border-bottom: 4px solid #f8f9fa;
+        border-radius: 5px;
+    
+    }
+    
+    .car-image-container {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        overflow: hidden;
+
+    }
+    
+    .choose-button {
+        font-family: "DM Sans", sans-serif;
+    
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .packages {
+    
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .packages h4{
+        margin-bottom: 4.2rem;
+        font-size: 2.5rem;
+    }
+    .packages .package {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom, #FFFFFF, #FFEBBB);
+        width: 95%;
+        height: 35.5rem;
+        margin-bottom: 2.7rem;
+    }
+    
+    .packages .package img {
+        border-radius: 15px 15px 0px 0px;
+        /* width: 10rem; */
+    }
+    .packages .package h3{
+        font-size: 1.25rem;
+    }
+    .packages .package .div {
+        position: relative;
+        padding: 1.5rem 1.5rem 0rem 1.5rem;
+        min-height: 13.5rem;
+        
+    }
+    .packages .package .div button{
+        position:absolute ;
+        font-family: "DM Sans", sans-serif;
+    
+      bottom: .8rem;
+        font-weight: 500;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 88%;
+        height: 20%;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .packages .package .div p{
+        margin-bottom: .2rem;
+       margin: 0%;
+    }
+    .packages .package .div .p{
+        font-size: .9rem;
+    }
+    .packages .show-all-button a {
+        width: 100%;
+        max-width: 200px;
+    }
+    .packages .show-all-button a button{
+        font-family: "DM Sans", sans-serif;
+    
+        align-items: center;
+        margin-top: 1.8rem;
+        font-weight: 400;
+        background: #ffffff;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .faq-section{
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .faq-section h4{
+        font-size: 2.5rem;
+    }
+    .accordion-item {
+        background-image: linear-gradient(to right, #feffef, #ffffff);
+    }
+    .accordion-button{
+        background-image: linear-gradient(to right, #feffe9, #fff5dd);
+    
+    }
+    .contact-us{
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .contact-us h4{
+        font-size: 2.5rem;
+    }
+    .contact-us  .contact-card{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 2.5rem;
+        border-radius: 15px;
+        width: 100%;
+        height: 10rem;
+        background-image: linear-gradient(to right, #f6f8e2, #FFEBBB);
+    
+    }
+    .contact-us  .contact-card button{
+        font-family: "DM Sans", sans-serif;
+        align-items: center;
+        /* margin-top: 1.8rem;   */
+        font-weight: 500;
+        font-size: 1.3rem;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    
+    }
+    
+    .car-list h4{
+        margin-top: 9.5rem !important;
+        margin: 2.5rem;
+        font-size: 2.5rem;
+    }
+    .car-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 387px;
+        transition: transform 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .car-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .car-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .car-info {
+        padding: 1rem;
+        position: relative;
+    }
+    .car-info  .book-now-btn {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1.8rem;
+        font-weight: 500;
+        background: #59FF59;
+        text-decoration: none;
+        width: 100%;
+      padding: .5rem 0rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .car-title {
+        font-size: 1.52rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: #2d3436;
+    }
+    
+    .passengers {
+        font-size: 0.95rem;
+        color: #636e72;
+        margin-bottom: 0.25rem;
+    }
+    
+    .price-info {
+        font-size: 0.95rem;
+        color: #636e72;
+    }
+    
+    .day-rate {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: #2d3436;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+}  
+@media (max-width: 1200.98px) {
+    .navbar-brand{
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        width: 7%;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .nav-link{
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #2d3436 !important;
+    }
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .mesh-full {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+            radial-gradient(circle at 0% 0%, #ff6b6b15, transparent 50%),
+            radial-gradient(circle at 100% 0%, #4ecdc415, transparent 50%),
+            radial-gradient(circle at 100% 100%, #45b7d115, transparent 50%),
+            radial-gradient(circle at 0% 100%, #96e6a115, transparent 50%);
+        background-color: #fafafa;
+        z-index: -1;
+        animation: meshFloat 15s ease-in-out infinite alternate;
+    }
+    
+    @keyframes meshFloat {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 50px 50px;
+        }
+    }
+    
+    /* Optional: Add a subtle grid overlay */
+    .mesh-full::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+            linear-gradient(0deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+    
+    .content {
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    b
+    p {
+        font-family: "DM Sans", sans-serif !important;
+    
+    }
+    
+    .hero-section {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .hero-section-1 {
+        justify-content: center;
+
+        margin-left: 1.5rem;
+        color: white;
+        height: 100vh !important;
+        font-family: "DM Sans", sans-serif;
+    }
+    
+    .hero-section-1 h1 {
+        font-weight: 500;
+    }
+    
+    .hero-section-1 button {
+        margin-top: 1.8rem;
+        font-weight: bold;
+        background: #D9D9D9;
+        text-decoration: none;
+        color: #495F6B;
+        padding: 1.1rem 2.8rem;
+        border: none;
+        border-radius: 50px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        font-family: "DM Sans", sans-serif;
+    
+    }
+    
+    .hero-section-1 button:hover {
+        transform: translateY(-3px);
+        background: #c0c0c0;
+    }
+    
+    /* Hero Image Animation */
+    .hero-image {
+        object-fit: cover;
+
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+    }
+    
+    /* Text Animations */
+    .fade-in-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s ease forwards;
+    }
+    
+    .delay-1 {
+        animation-delay: 0.3s;
+    }
+    
+    .delay-2 {
+        animation-delay: 0.6s;
+    }
+    
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    .about-us {
+    
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    
+    .about-us .round {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #F3FFD4, #FFCC53);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 2px solid #dee2e6;
+    }
+    
+    .about-us .round h3 {
+        font-size: 2rem;
+    }
+    
+    .about-us h5 {
+        margin-top: .8rem;
+        font-size: 1.5rem;
+    }
+    .service-card{
+        height: 16.1rem;
+        border: 2px solid #FFEBBB !important;
+
+    }
+    
+    .car-selection {
+    
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .car-selection h4{
+        margin-top: .8rem;
+        font-size: 2.5rem;
+    }
+    
+    .nav-pills {
+        padding-top: 1.3rem;
+        padding: .75rem 0rem;
+        height: 4.2rem;
+        border-radius: 50px;
+        background: #F7B926;
+    }
+    
+    .car-tab {
+        margin-top: .2rem;
+    
+        font-family: "DM Sans", sans-serif;
+    
+        cursor: pointer;
+        transition: all 0.3s ease;
+        /* border-radius: 50px; */
+        padding: 10px 15px;
+        margin: 0px 18px;
+    }
+    
+    .car-tab:hover {
+        border-bottom: 4px solid #5c5c5c;
+    
+    }
+    
+    .car-tab.active {
+        /* padding: 1rem 2rem; */
+        border-bottom: 4px solid #f8f9fa;
+        border-radius: 5px;
+    
+    }
+    
+    .car-image-container {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        overflow: hidden;
+
+    }
+
+    
+    .choose-button {
+        font-family: "DM Sans", sans-serif;
+    
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .packages {
+    
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .packages h4{
+        margin-bottom: 4.2rem;
+        font-size: 2.5rem;
+    }
+    .packages .package {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom, #FFFFFF, #FFEBBB);
+        width: 100%;
+        height: 30.5rem;
+        margin-bottom: 2.7rem;
+    }
+    
+    .packages .package img {
+        height: 16rem;
+        border-radius: 15px 15px 0px 0px;
+        /* width: 10rem; */
+    }
+    .packages .package h3{
+        font-size: 1.3rem;
+    }
+    .packages .package h3{
+        font-size: 1.25rem;
+    }
+    .packages .package .div {
+        position: relative;
+        padding: 1.5rem 1.5rem 0rem 1.5rem;
+        min-height: 13.5rem;
+        
+    }
+    .packages .package .div button{
+        position:absolute ;
+        font-family: "DM Sans", sans-serif;
+    
+      bottom: .8rem;
+        font-weight: 500;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 88%;
+        height: 20%;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .packages .package .div p{
+        margin-bottom: .2rem;
+       margin: 0%;
+    }
+    .packages .package .div .p{
+        margin-top: .25rem;
+        font-size: .8rem;
+    }
+    .packages .show-all-button a {
+        width: 100%;
+        max-width: 200px;
+    }
+    .packages .show-all-button a button{
+        font-family: "DM Sans", sans-serif;
+    
+        align-items: center;
+        margin-top: 1.8rem;
+        font-weight: 400;
+        background: #ffffff;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .faq-section{
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .faq-section h4{
+        font-size: 2.5rem;
+    }
+    .accordion-item {
+        background-image: linear-gradient(to right, #feffef, #ffffff);
+    }
+    .accordion-button{
+        background-image: linear-gradient(to right, #feffe9, #fff5dd);
+    
+    }
+    .contact-us{
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .contact-us h4{
+        font-size: 2.5rem;
+    }
+    .contact-us  .contact-card{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 2.5rem;
+        border-radius: 15px;
+        width: 100%;
+        height: 10rem;
+        background-image: linear-gradient(to right, #f6f8e2, #FFEBBB);
+    
+    }
+    .contact-us  .contact-card button{
+        font-family: "DM Sans", sans-serif;
+        align-items: center;
+        /* margin-top: 1.8rem;   */
+        font-weight: 500;
+        font-size: 1.3rem;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    
+    }
+    
+    .car-list h4{
+        margin-top: 9.5rem !important;
+        margin: 2.5rem;
+        font-size: 2.5rem;
+    }
+    .car-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 387px;
+        transition: transform 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .car-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .car-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .car-info {
+        padding: 1rem;
+        position: relative;
+    }
+    .car-info  .book-now-btn {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1.8rem;
+        font-weight: 500;
+        background: #59FF59;
+        text-decoration: none;
+        width: 100%;
+      padding: .5rem 0rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .car-title {
+        font-size: 1.22rem;
+        margin-top: .5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: #2d3436;
+    }
+    
+    .passengers {
+        font-size: 0.95rem;
+        color: #636e72;
+        margin-bottom: 0.25rem;
+    }
+    
+    .price-info {
+        font-size: 0.95rem;
+        color: #636e72;
+    }
+    
+    .day-rate {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: #2d3436;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }   
+}
+@media (max-width: 999.98px){
+    .navbar-collapse {
+position: relative;        background-color: white !important;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+      
+      .navbar-nav .nav-link {
+        color: #6c757d !important; /* Bootstrap's gray-600 color */
+      }
+      
+      .navbar-nav .nav-link.active {
+        color: #0d6efd !important; /* Bootstrap's primary color */
+      }
+    .nav-link{
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #2d3436 !important;
+    }
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .mesh-full {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+            radial-gradient(circle at 0% 0%, #ff6b6b15, transparent 50%),
+            radial-gradient(circle at 100% 0%, #4ecdc415, transparent 50%),
+            radial-gradient(circle at 100% 100%, #45b7d115, transparent 50%),
+            radial-gradient(circle at 0% 100%, #96e6a115, transparent 50%);
+        background-color: #fafafa;
+        z-index: -1;
+        animation: meshFloat 15s ease-in-out infinite alternate;
+    }
+    
+    @keyframes meshFloat {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 50px 50px;
+        }
+    }
+    
+    /* Optional: Add a subtle grid overlay */
+    .mesh-full::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+            linear-gradient(0deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+    
+    .content {
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    b
+    p {
+        font-family: "DM Sans", sans-serif !important;
+    
+    }
+    
+    .hero-section {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .hero-section-1 {
+        justify-content: left;
+        color: white;
+        height: 100vh !important;
+        font-family: "DM Sans", sans-serif;
+    }
+    
+    .hero-section-1 h1 {
+        font-weight: 500;
+    }
+    
+    .hero-section-1 button {
+        margin-top: 1.8rem;
+        font-weight: bold;
+        background: #D9D9D9;
+        text-decoration: none;
+        color: #495F6B;
+        padding: 1.1rem 2.8rem;
+        border: none;
+        border-radius: 50px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        font-family: "DM Sans", sans-serif;
+    
+    }
+    
+    .hero-section-1 button:hover {
+        transform: translateY(-3px);
+        background: #c0c0c0;
+    }
+    
+    /* Hero Image Animation */
+    .hero-image {
+        object-fit: cover;
+
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+    }
+    
+    /* Text Animations */
+    .fade-in-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s ease forwards;
+    }
+    
+    .delay-1 {
+        animation-delay: 0.3s;
+    }
+    
+    .delay-2 {
+        animation-delay: 0.6s;
+    }
+    
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    .about-us {
+    
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    
+    .about-us .round {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #F3FFD4, #FFCC53);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 2px solid #dee2e6;
+    }
+    
+    .about-us .round h3 {
+        font-size: 2rem;
+    }
+    
+    .about-us h5 {
+        margin-top: .8rem;
+        font-size: 1.5rem;
+    }
+    
+    .car-selection {
+    
+        height: 100%;
+        padding: 3.2rem 0rem;
+    }
+    .car-selection h4{
+        margin-top: .8rem;
+        font-size: 2.5rem;
+    }
+    
+    .nav-pills {
+        padding-top: 1.3rem;
+        padding: .75rem 0rem;
+        height: 4.2rem;
+        border-radius: 50px;
+        background: #F7B926;
+    }
+    
+    .car-tab {
+        margin-top: .2rem;
+    
+        font-family: "DM Sans", sans-serif;
+    
+        cursor: pointer;
+        transition: all 0.3s ease;
+        /* border-radius: 50px; */
+        padding: 10px 15px;
+        margin: 0px 18px;
+    }
+    
+    .car-tab:hover {
+        border-bottom: 4px solid #5c5c5c;
+    
+    }
+    
+    .car-tab.active {
+        /* padding: 1rem 2rem; */
+        border-bottom: 4px solid #f8f9fa;
+        border-radius: 5px;
+    
+    }
+    
+    .car-image-container {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        overflow: hidden;
+
+    }
+    
+    .choose-button {
+        font-family: "DM Sans", sans-serif;
+    
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .packages {
+    
+        height: 100%;
+        padding: 3rem 0rem;
+    }
+    .packages h4{
+        margin-bottom: 4.2rem;
+        font-size: 2.5rem;
+    }
+    .packages .package {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom, #FFFFFF, #FFEBBB);
+        width: 95%;
+        height: 30.5rem;
+        margin-bottom: 2.7rem;
+    }
+    
+    .packages .package img {
+        border-radius: 15px 15px 0px 0px;
+        /* width: 10rem; */
+    }
+    .packages .package h3{
+        font-size: 1.3rem;
+    }
+    .packages .package .div {
+        position: relative;
+        padding: 1.5rem 1.5rem 0rem 1.5rem;
+        min-height: 13.5rem;
+        
+    }
+    .packages .package .div button{
+        position:absolute ;
+        font-family: "DM Sans", sans-serif;
+    
+      bottom: .8rem;
+        font-weight: 500;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 88%;
+        height: 20%;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .packages .package .div p{
+        margin-bottom: .2rem;
+       margin: 0%;
+    }
+    .packages .package .div .p{
+        margin-top: .25rem;
+        font-size: .8rem;
+    }
+    .packages .show-all-button a {
+        width: 100%;
+        max-width: 200px;
+    }
+    .packages .show-all-button a button{
+        font-family: "DM Sans", sans-serif;
+    
+        align-items: center;
+        margin-top: 1.8rem;
+        font-weight: 400;
+        background: #ffffff;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .faq-section{
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .faq-section h4{
+        font-size: 2.5rem;
+    }
+    .accordion-item {
+        background-image: linear-gradient(to right, #feffef, #ffffff);
+    }
+    .accordion-button{
+        background-image: linear-gradient(to right, #feffe9, #fff5dd);
+    
+    }
+    .contact-us{
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    .contact-us h4{
+        font-size: 2.5rem;
+    }
+    .contact-us  .contact-card{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 2.5rem;
+        border-radius: 15px;
+        width: 100%;
+        height: 14rem;
+        background-image: linear-gradient(to right, #f6f8e2, #FFEBBB);
+    
+    }
+    .contact-us  .contact-card button{
+        font-family: "DM Sans", sans-serif;
+        align-items: center;
+        margin-top: .8rem;  
+        font-weight: 500;
+        font-size: 1.3rem;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    
+    }
+    
+    .car-list h4{
+        margin-top: 9.5rem !important;
+        margin: 2.5rem;
+        font-size: 2.5rem;
+    }
+    .car-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 397px;
+        transition: transform 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .car-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .car-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .car-info {
+        padding: 1rem;
+        position: relative;
+    }
+    
+    .car-title {
+        font-size: 1.52rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: #2d3436;
+    }
+    
+    .passengers {
+        font-size: 0.95rem;
+        color: #636e72;
+        margin-bottom: 0.25rem;
+    }
+    
+    .price-info {
+        font-size: 0.95rem;
+        color: #636e72;
+    }
+    
+    .day-rate {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: #2d3436;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+}  
+
+@media (max-width: 767px) {
+    .nav-link{
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #2d3436 !important;
+    }
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .mesh-full {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+            radial-gradient(circle at 0% 0%, #ff6b6b15, transparent 50%),
+            radial-gradient(circle at 100% 0%, #4ecdc415, transparent 50%),
+            radial-gradient(circle at 100% 100%, #45b7d115, transparent 50%),
+            radial-gradient(circle at 0% 100%, #96e6a115, transparent 50%);
+        background-color: #fafafa;
+        z-index: -1;
+        animation: meshFloat 15s ease-in-out infinite alternate;
+    }
+    
+    @keyframes meshFloat {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 50px 50px;
+        }
+    }
+    
+    /* Optional: Add a subtle grid overlay */
+    .mesh-full::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+            linear-gradient(0deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+    
+    .content {
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    b
+    p {
+        font-family: "DM Sans", sans-serif !important;
+    
+    }
+    
+    .hero-section {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .hero-section-1 {
+        justify-content: left ;
+        margin: 0rem;
+        color: white;
+        height: 100vh !important;
+        font-family: "DM Sans", sans-serif;
+    }
+    
+    .hero-section-1 h1 {
+        font-weight: 500;
+    }
+    
+    .hero-section-1 button {
+        margin-top: 1.8rem;
+        font-weight: bold;
+        background: #D9D9D9;
+        text-decoration: none;
+        color: #495F6B;
+        padding: 1.1rem 2.8rem;
+        border: none;
+        border-radius: 50px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        font-family: "DM Sans", sans-serif;
+    
+    }
+    
+    .hero-section-1 button:hover {
+        transform: translateY(-3px);
+        background: #c0c0c0;
+    }
+    
+    /* Hero Image Animation */
+    .hero-image {
+        object-fit: cover;
+
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+    }
+    
+    /* Text Animations */
+    .fade-in-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s ease forwards;
+    }
+    
+    .delay-1 {
+        animation-delay: 0.3s;
+    }
+    
+    .delay-2 {
+        animation-delay: 0.6s;
+    }
+    
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    .about-us {
+    
+        height: 100%;
+        padding: 10rem 0rem;
+    }
+    
+    .about-us .round {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #F3FFD4, #FFCC53);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 2px solid #dee2e6;
+    }
+    
+    .about-us .round h3 {
+        font-size: 2rem;
+    }
+    
+    .about-us h5 {
+        margin-top: .8rem;
+        font-size: 1.5rem;
+    }
+    .service-card{
+        height: 13.5rem;
+        border: 2px solid #FFEBBB !important;
+    }
+    
+    .car-selection {
+    
+        height: 100%;
+        padding: 3.2rem 0rem;
+    }
+    .car-selection h4{
+        margin-top: .8rem;
+        font-size: 2.5rem;
+    }
+    
+    .nav-pills {
+        padding-top: 1.3rem;
+        padding: .75rem 0rem;
+        height: 4.2rem;
+        border-radius: 50px;
+        background: #F7B926;
+    }
+    
+    .car-tab {
+        font-size: 1rem;
+        margin-top: .2rem;
+    
+        font-family: "DM Sans", sans-serif;
+    
+        cursor: pointer;
+        transition: all 0.3s ease;
+        /* border-radius: 50px; */
+        padding: 10px 15px;
+        margin: 0px 18px;
+    }
+    .car-tab h5{
+        font-size: 1rem;
+    }
+    
+    .car-tab:hover {
+        border-bottom: 4px solid #5c5c5c;
+    
+    }
+    
+    .car-tab.active {
+        /* padding: 1rem 2rem; */
+        border-bottom: 4px solid #f8f9fa;
+        border-radius: 5px;
+    
+    }
+    
+    .car-image-container {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        overflow: hidden;
+
+    }
+    
+    .choose-button {
+        font-family: "DM Sans", sans-serif;
+    
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .packages {
+    
+        height: 100%;
+        padding: 3rem 0rem;
+    }
+    .packages h4{
+        margin-bottom: 4.2rem;
+        font-size: 2.5rem;
+    }
+    .packages .package {
+        display: flex;
+        flex-direction: column;
+       
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom, #FFFFFF, #FFEBBB);
+        width: 100%;
+        height: 32.5rem;
+        margin-bottom: 2.7rem;
+    }
+    .packages  .container{
+        max-width: 687px !important;
+    }
+    .packages .package img {
+        border-radius: 15px 15px 0px 0px;
+        /* width: 10rem; */
+    }
+    .packages .package .div {
+        min-height: 15.5rem !important;
+        position: relative;
+        padding: 1.5rem 1.5rem 0rem 1.5rem;
+        min-height: 13.5rem;
+        
+    }
+    .packages .package .div button{
+        position:absolute ;
+        font-family: "DM Sans", sans-serif;
+    
+      bottom: .8rem;
+        font-weight: 500;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 88%;
+        height: 20%;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .packages .package .div p{
+        margin-bottom: .2rem;
+       margin: 0%;
+    }
+    .packages .package .div .p{
+        margin-top: .25rem;
+        font-size: 1rem;
+    }
+    .packages .show-all-button a {
+        width: 100%;
+        max-width: 200px;
+    }
+    .packages .show-all-button a button{
+        font-family: "DM Sans", sans-serif;
+    
+        align-items: center;
+        margin-top: 1.8rem;
+        font-weight: 400;
+        background: #ffffff;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .faq-section{
+        height: 100%;
+        padding: 3rem 0rem;
+    }
+    .faq-section h4{
+        font-size: 2.5rem;
+    }
+    .accordion-item {
+        background-image: linear-gradient(to right, #feffef, #ffffff);
+    }
+    .accordion-button{
+        background-image: linear-gradient(to right, #feffe9, #fff5dd);
+    
+    }
+    .contact-us{
+        height: 100%;
+        padding: 3rem 0rem;
+    }
+    .contact-us h4{
+        font-size: 2.5rem;
+    }
+    .contact-us  .contact-card{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 2.5rem;
+        border-radius: 15px;
+        width: 100%;
+        height: 14rem;
+        background-image: linear-gradient(to right, #f6f8e2, #FFEBBB);
+    
+    }
+    .contact-us  .contact-card button{
+        font-family: "DM Sans", sans-serif;
+        align-items: center;
+        margin-top: .8rem;  
+        font-weight: 500;
+        font-size: 1.3rem;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    
+    }
+    
+    .car-list h4{
+        margin-top: 9.5rem !important;
+        margin: 2.5rem;
+        font-size: 2.5rem;
+    }
+    .car-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 397px;
+        transition: transform 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .car-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .car-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .car-info {
+        padding: 1rem;
+        position: relative;
+    }
+    
+    .car-title {
+        font-size: 1.52rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: #2d3436;
+    }
+    
+    .passengers {
+        font-size: 0.95rem;
+        color: #636e72;
+        margin-bottom: 0.25rem;
+    }
+    
+    .price-info {
+        font-size: 0.95rem;
+        color: #636e72;
+    }
+    
+    .day-rate {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: #2d3436;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 575px){
+    .nav-link{
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #2d3436 !important;
+    }
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navbar-brand {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        width: 13%;
+    }
+    .mesh-full {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+            radial-gradient(circle at 0% 0%, #ff6b6b15, transparent 50%),
+            radial-gradient(circle at 100% 0%, #4ecdc415, transparent 50%),
+            radial-gradient(circle at 100% 100%, #45b7d115, transparent 50%),
+            radial-gradient(circle at 0% 100%, #96e6a115, transparent 50%);
+        background-color: #fafafa;
+        z-index: -1;
+        animation: meshFloat 15s ease-in-out infinite alternate;
+    }
+    
+    @keyframes meshFloat {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 50px 50px;
+        }
+    }
+    
+    /* Optional: Add a subtle grid overlay */
+    .mesh-full::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+            linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+            linear-gradient(0deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+    
+    .content {
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    b
+    p {
+        font-family: "DM Sans", sans-serif !important;
+    
+    }
+    
+    .hero-section {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .hero-section-1 {
+        margin: 0rem;
+        color: white;
+        height: 100vh !important;
+        font-family: "DM Sans", sans-serif;
+    }
+    
+    .hero-section-1 h1 {
+        font-weight: 500;
+    }
+    
+    .hero-section-1 button {
+        margin-top: 1.8rem;
+        font-weight: bold;
+        background: #D9D9D9;
+        text-decoration: none;
+        color: #495F6B;
+        padding: 1.1rem 2.8rem;
+        border: none;
+        border-radius: 50px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        font-family: "DM Sans", sans-serif;
+    
+    }
+    
+    .hero-section-1 button:hover {
+        transform: translateY(-3px);
+        background: #c0c0c0;
+    }
+    
+    /* Hero Image Animation */
+    .hero-image {
+        object-fit: cover;
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+    }
+    
+    /* Text Animations */
+    .fade-in-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s ease forwards;
+    }
+    
+    .delay-1 {
+        animation-delay: 0.3s;
+    }
+    
+    .delay-2 {
+        animation-delay: 0.6s;
+    }
+    
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    .about-us {
+    
+        height: 100%;
+        padding: 4em 0rem;
+    }
+    
+    .about-us .round {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #F3FFD4, #FFCC53);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 2px solid #dee2e6;
+    }
+    
+    .about-us .round h3 {
+        font-size: 2rem;
+    }
+    
+    .about-us h5 {
+        margin-top: .8rem;
+        font-size: 1.5rem;
+    }
+    
+    .car-selection {
+    
+        height: 100%;
+        padding: .2rem 0rem;
+    }
+    .car-selection h4{
+        margin-top: .8rem;
+        font-size: 1.5rem;
+    }
+    .nav {
+        display: flex;
+        flex-wrap: nowrap !important;}
+    .nav-pills {
+        flex-wrap: nowrap !important;
+        padding-top: 1.3rem;
+        padding: .75rem 0rem;
+        height: 4.2rem;
+        border-radius: 50px;
+        background: #F7B926;
+    }
+    
+    .car-tab {
+       
+        font-size: .9rem;
+        margin-top: .5rem;
+    
+        font-family: "DM Sans", sans-serif;
+    
+        cursor: pointer;
+        transition: all 0.3s ease;
+        /* border-radius: 50px; */
+        padding: 10px 0px;
+        margin: 2px 19px;
+    }
+    .car-tab h5{
+        font-size: .8rem;
+    }
+    
+    .car-tab:hover {
+        border-bottom: 4px solid #5c5c5c;
+    
+    }
+    
+    .car-tab.active {
+        /* padding: 1rem 2rem; */
+        border-bottom: 4px solid #f8f9fa;
+        border-radius: 5px;
+    
+    }
+    
+    .car-image-container {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        overflow: hidden;
+
+    }
+    
+    .choose-button {
+        font-family: "DM Sans", sans-serif;
+    
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .packages {
+    
+        height: 100%;
+        padding: 2.4rem 0rem;
+    }
+    .packages h4{
+        margin-bottom: 3.5rem;
+        font-size: 1.5rem;
+    }
+    .packages .package {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom, #FFFFFF, #FFEBBB);
+        width: 100%;
+        height: 31rem;
+        margin-bottom: 2.7rem;
+    }
+    .packages  .container{
+        max-width: 410px !important;
+    }
+    .packages .package img {
+        border-radius: 15px 15px 0px 0px;
+        /* width: 10rem; */
+    }
+    .packages .package .div {
+        min-height: 14.5rem !important;
+        position: relative;
+        padding: 1.5rem 1.5rem 0rem 1.5rem;
+        min-height: 12.5rem;
+        
+    }
+    .packages .package .div button{
+        position:absolute ;
+        font-family: "DM Sans", sans-serif;
+    
+      bottom: .8rem;
+        font-weight: 500;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 88%;
+        height: 20%;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .packages .package .div p{
+        margin-bottom: .2rem;
+       margin: 0%;
+    }
+    .packages .package .div .p{
+        margin-top: .25rem;
+        font-size: 1rem;
+    }
+    .packages .package .div button{
+        font-family: "DM Sans", sans-serif;
+    
+        margin-top: -0.2rem;
+        font-weight: 500;
+        background: #59FF59;
+        text-decoration: none;
+    
+        width: 90%;
+        height: 20%;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .packages .show-all-button a {
+        width: 100%;
+        max-width: 200px;
+    }
+    .packages .show-all-button a button{
+        font-family: "DM Sans", sans-serif;
+    
+        align-items: center;
+        margin-top: -1.8rem;
+        font-weight: 400;
+        background: #ffffff;
+        text-decoration: none;
+    
+        width: 100%;
+        max-width: 200px;
+        height: 3rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    }
+    .faq-section{
+        height: 100%;
+        padding: 3rem 0rem;
+    }
+    .faq-section h4{
+        font-size: 1.5rem;
+    }
+    .accordion-item {
+        background-image: linear-gradient(to right, #feffef, #ffffff);
+    }
+    .accordion-button{
+        background-image: linear-gradient(to right, #feffe9, #fff5dd);
+    
+    }
+    .contact-us{
+        height: 100%;
+        padding: 3rem 0rem;
+    }
+    .contact-us h4{
+        font-size: 1.5rem;
+    }
+    .contact-us  .contact-card{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        border-radius: 15px;
+        width: 100%;
+        height: 11rem;
+        background-image: linear-gradient(to right, #f6f8e2, #FFEBBB);
+    
+    }
+    .contact-us  .contact-card h2{
+        font-size: 1.2rem;
+    }
+    .contact-us  .contact-card button{
+        font-family: "DM Sans", sans-serif;
+        align-items: center;
+        margin-top: .8rem;  
+        font-weight: 500;
+        font-size: 1rem;
+        background: #59FF59;
+        text-decoration: none;
+        width: 100%;
+        max-width: 149px;
+        height: 2.2rem;
+        border: 1px solid #11E3A8;
+        border-radius: 50px;
+    
+    }
+    
+    .car-list h4{
+        margin-top: 9.5rem !important;
+        margin: 2.5rem;
+        font-size: 2.5rem;
+    }
+    .car-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 397px;
+        transition: transform 0.3s;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .car-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .car-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .car-info {
+        padding: 1rem;
+        position: relative;
+    }
+    
+    .car-title {
+        font-size: 1.22rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: #2d3436;
+    }
+    
+    .passengers {
+        font-size: 0.95rem;
+        color: #636e72;
+        margin-bottom: 0.25rem;
+    }
+    
+    .price-info {
+        font-size: 0.95rem;
+        color: #636e72;
+    }
+    
+    .day-rate {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: #2d3436;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+}

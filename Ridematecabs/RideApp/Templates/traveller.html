@@ -1,0 +1,39 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section class="car-list">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <h4>Our Tembo's</h4>
+        
+        <div class="container">
+            <div class="row g-4">
+                {% for car in cars %}
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="car-card">
+                        {% if car.image %}
+                        <img src="{{ car.image.url }}" alt="{{ car.title }}" class="car-image">
+                        {% else %}
+                        <img src="{% static 'images/placeholder.jpg' %}" alt="{{ car.title }}" class="car-image">
+                        {% endif %}
+                        <div class="car-info">
+                            <div class="car-title">{{ car.title }} - {{ car.model }}</div>
+                            <div class="passengers">{{ car.passengers }} passengers</div>
+                            <div class="price-info">Extra Rs. {{ car.price_per_km }}/km</div>
+                            <div class="day-rate">{{ car.price_per_day }}rs/day</div>
+                            <a href="https://wa.me/{{ car.whatsapp_number }}?text={{ car.get_whatsapp_message }}" 
+                               target="_blank" 
+                               class="book-now-btn mt-3">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12 text-center">
+                    <p>No cars available at the moment.</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

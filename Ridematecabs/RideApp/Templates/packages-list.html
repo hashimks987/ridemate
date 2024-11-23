@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<section class="packages">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <h4>Our Tour Packages</h4>
+    <div class="container">
+      <div class="row">
+        {% for package in packages %}
+        <div class="col-lg-4 col-md-6">
+            <div class="package">
+                {% if package.image %}
+                <img style="object-fit: cover;" src="{{ package.image.url }}" alt="{{ package.title }}">
+                {% endif %}
+                <div class="div">
+                    <h3>{{ package.title }}</h3>
+                    <p>During : {{ package.duration_nights }} nights / {{ package.duration_days }} days</p>
+                    <p><b>Destination : {{ package.destinations }}</b></p>
+                    <!-- <p>Price: ${{ package.price }}</p> -->
+                  <button> <a style="text-decoration: none; color: black;" href="https://wa.me/{{ package.whatsapp_number }}?text={{ package.get_whatsapp_message }}" 
+                    target="_blank" 
+                    class="book-now-btn">
+                     Book Now
+                 </a></button> 
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+      
+        
+      </div>
+    </div>
+    </div>
+  </section>
+
+  {% endblock %}
